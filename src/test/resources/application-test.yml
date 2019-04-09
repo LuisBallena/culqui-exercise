@@ -1,0 +1,5 @@
+api:
+  external:
+    binlist:
+      url: http://localhost:9090
+      getCardInfo: ${api.external.binlist.url}/{bin}

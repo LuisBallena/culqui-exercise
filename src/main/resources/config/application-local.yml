@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+logging:
+  config: classpath:logging/logback.xml
+
+api:
+  external:
+    binlist:
+      url: https://lookup.binlist.net
+      getCardInfo: ${api.external.binlist.url}/{bin}
+
